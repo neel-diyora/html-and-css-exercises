@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>header using flexbox</title>
+
+        <style>
+            .header {
+                display: flex;
+                flex-direction: row;
+                /* background-color: rgb(181, 94, 181); */
+                font-weight: bold;
+                color: white;
+                font-family: arial;
+                height: 60px;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            button {
+                background: none;
+            }
+
+            input {
+                padding: 10px;
+            }
+
+            .middle-section {
+                max-width: 300px;
+                background-color: yellow;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <div class="left-section">
+                Home
+            </div>
+            <div class="middle-section">
+                <input type="text" placeholder="Search">
+            </div>
+            <div class="right-section">
+                <button>Download</button>
+            </div>
+        </div>
+    </body>
+</html>

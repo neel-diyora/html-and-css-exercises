@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Display Grid</title>
+        <style>
+            p {
+                margin: 0;
+                padding: 27px;
+            }
+
+            body {
+                display: grid;
+                gap: 1rem;
+                grid-auto-columns: 1fr;  /* ------> this is most important to having same width of column */
+                grid-template-areas: 
+                    'one'
+                    'two'
+                    'three'
+                    'four'
+                    'five';
+            }
+
+            @media (min-width: 500px) {
+                body{
+                    grid-template-areas: 
+                        'one five'
+                        'two five'
+                        'three five'
+                        'four five';
+                }
+            }
+            
+            @media (min-width: 990px) {
+                body{
+                    grid-template-areas: 
+                        'one one'
+                        'two five'
+                        'three five'
+                        'four four';
+                }
+            }
+
+            @media (min-width: 1500px) {
+                body{
+                    grid-template-areas: 
+                        'one one two five'
+                        'three four four five';
+                }
+            }
+
+            .para-1 {
+                background-color: #ceb1b7;
+                grid-area: one;
+            }
+            .para-2 {
+                background-color: #d3ff81;
+                grid-area: two;
+            }
+            .para-3 {
+                background-color: #9dc1f7;
+                grid-area: three;
+            }
+            .para-4 {
+                background-color: #f99bd8;
+                grid-area: four;
+            }
+            .para-5 {
+                background-color: #9fdae9;
+                grid-area: five;
+            }
+        </style>
+    </head>
+    <body>
+        <p class="para-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus vitae est error cumque rem dicta totam aliquid similique ipsum architecto? Aliquam quisquam natus blanditiis voluptatibus cupiditate placeat delectus dolor nobis.</p>
+        <p class="para-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus vitae est error cumque rem dicta totam aliquid similique ipsum architecto? Aliquam quisquam natus blanditiis voluptatibus cupiditate placeat delectus dolor nobis.</p>
+        <p class="para-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus vitae est error cumque rem dicta totam aliquid similique ipsum architecto? Aliquam quisquam natus blanditiis voluptatibus cupiditate placeat delectus dolor nobis.</p>
+        <p class="para-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus vitae est error cumque rem dicta totam aliquid similique ipsum architecto? Aliquam quisquam natus blanditiis voluptatibus cupiditate placeat delectus dolor nobis.</p>
+        <p class="para-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus vitae est error cumque rem dicta totam aliquid similique ipsum architecto? Aliquam quisquam natus blanditiis voluptatibus cupiditate placeat delectus dolor nobis.</p>
+    </body>
+</html>

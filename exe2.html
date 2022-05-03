@@ -1,0 +1,82 @@
+<!-- Display inline-block -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>animal</title>
+        <style>
+            p {
+                font-family: arial;
+                margin: 0;
+                padding: 0;
+            }
+
+            .container {
+                display: inline-block;
+                border-width: 1px;
+                box-shadow: 5px 5px 10px rgba(0,0,0,0.15);
+                border-radius: 2px;
+                margin-right: 10px;
+            }
+
+            .image {
+                width: 200px;
+                height: 200px;
+                object-fit: cover;
+                border-radius: 2px;
+            }
+
+            .title {
+                font-weight: bold;
+                font-size: 16px;
+                margin-bottom: 2px;
+                margin-left: 8px;
+                margin-top: 8px;
+            }
+
+            .stats {
+                font-size: 13px;
+                color: rgb(106, 103, 103);
+                margin-bottom: 9px;
+                margin-left: 8px;
+            }
+
+            button {
+                background-color: rgb(51, 90, 220);
+                color: white;
+                border: none;
+                border-radius: 4px;
+                font-size: 13px;
+                padding: 7px 14px;
+                margin-left: 8px;
+                margin-bottom: 8px;
+                
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <img class="image" src="images/cat.jfif">
+
+            <p class="title">Mimi</p>
+            <p class="stats">2 mutual friends</p>
+            <button>Add Friend</button>    
+        </div>
+
+        <div class="container">
+            <img class="image" src="images/baby-dog.jfif">
+
+            <p class="title">Baby Dog</p>
+            <p class="stats">3 mutual friends</p>
+            <button>Add Friend</button>    
+        </div>
+
+        <div class="container">
+            <img class="image" src="images/red-fox.jfif">
+
+            <p class="title">Red Fox</p>
+            <p class="stats">4 mutual friends</p>
+            <button>Add Friend</button>    
+        </div>
+       
+    </body>
+</html>

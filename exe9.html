@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .one {
+                /* grid-area: 1/1/2/6;  ----> we can do it this way too.  */
+                height: 20px;
+                grid-area: areaName;
+            }
+            .container {
+                height: 100%;
+                display: grid;
+                grid-template-areas: 'areaName areaName areaName areaName areaName';
+                grid-gap: 10px;
+                background: #f14668;
+                padding: 10px;
+            }
+
+            .container > div {
+                text-align: center;
+                padding: 20px 0;
+                font-size: 32px;
+                background: #ffd880;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="one">1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div>10</div>
+            <div>11</div>
+        </div>
+    </body>
+</html>

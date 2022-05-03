@@ -1,0 +1,132 @@
+<!-- Nested layouts technique using display inline-block :  -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>animal</title>
+        <style>
+            p {
+                font-family: arial;
+                margin: 0;
+                padding: 0;
+            }
+
+            .container {
+                display: inline-block;
+                border-width: 1px;
+                box-shadow: 5px 5px 10px rgba(0,0,0,0.15);
+                border-radius: 2px;
+                margin-right: 10px;
+            }
+
+            .image {
+                width: 200px;
+                height: 200px;
+                object-fit: cover;
+                border-radius: 2px;
+            }
+
+            .title {
+                font-weight: bold;
+                font-size: 16px;
+                margin-bottom: 4px;
+            }
+
+            .stats {
+                font-size: 13px;
+                color: rgb(106, 103, 103);
+            }
+
+            button {
+                background-color: rgb(51, 90, 220);
+                color: white;
+                border: none;
+                border-radius: 4px;
+                font-size: 13px;
+                padding: 7px 14px;
+            }
+
+            .channal-profile {
+                display: inline-block;
+                width: 40px;
+                vertical-align: middle;
+            }
+
+            .channal-info {
+                display: inline-block;
+            }
+
+            .profile-logo-img {
+                width: 35px;
+                height: 35px;
+                object-fit: cover;
+                border-radius: 100%;
+            }
+
+            .logo-row {
+                margin-bottom: 4px;
+            }
+
+            .info-row {
+                margin: 9px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div>
+                <img class="image" src="images/cat.jfif">
+            </div>
+            <div class="info-row">
+                <p class="title">Mimi</p>
+                <div class="logo-row">
+                    <div class="channal-profile">
+                        <img class="profile-logo-img" src="channal logo/dog logo.PNG">
+                    </div>
+                    <div class="channal-info">
+                        <p class="stats">2 mutual friends</p>
+                    </div> 
+                </div>
+                <button>Add Friend</button>  
+            </div>
+        </div>
+
+        <div class="container">
+            <div>
+                <img class="image" src="images/baby-dog.jfif">
+            </div>
+            <div class="info-row">
+                <p class="title">Baby Dog</p>
+                <div class="logo-row">
+                    <div class="channal-profile">
+                        <img class="profile-logo-img" src="channal logo/dog logo.PNG">
+                    </div>
+                    <div class="channal-info">
+                        <p class="stats">3 mutual friends</p>
+                    </div> 
+                </div>
+                <button>Add Friend</button>  
+            </div>
+        </div>
+
+        <div class="container">
+            <div>
+                <img class="image" src="images/red-fox.jfif">
+            </div>
+            <div class="info-row">
+                <p class="title">Red Fox</p>
+                <div class="logo-row">
+                    <div class="channal-profile">
+                        <img class="profile-logo-img" src="channal logo/dog logo.PNG">
+                    </div>
+                    <div class="channal-info">
+                        <p class="stats">4 mutual friends</p>
+                    </div> 
+                </div>
+                <button>Add Friend</button>  
+            </div>
+        </div>
+
+       
+       
+    </body>
+</html>

@@ -1,0 +1,125 @@
+// Nested Layouts Technique using display inline-block : 
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+        <style>
+            p {
+                margin: 0;
+                padding: 0;
+                font-family: roboto, arial;
+            }
+
+            .container {
+                display: block;
+                margin-bottom: 26px;
+                width: ;
+            }
+
+            .channal-picture{
+                display: inline-block;
+                width: 100px;
+                text-align: center;
+                margin-right: 5px;
+            }
+
+            .profile-picture {
+                width: 80px;
+                height: 80px;
+                object-fit: cover;
+                border-radius: 100%;
+                vertical-align: middle;
+            }
+
+            .profile-info {
+                display: inline-block;
+                vertical-align: middle;
+                width: 280px;
+            }
+
+            .follow-button {
+                display: inline-block;
+            }
+
+            button {
+                font-family: roboto, arial;
+                font-weight: 700;
+                color: white;
+                background-color: rgb(29, 155, 240);
+                font-size: 22px;
+                padding: 10px 18px;
+                border-radius: 8px;
+                border: none;
+            }
+
+            .title {
+                font-weight: 500;
+                font-size: 19px;
+                margin-bottom: 5px;
+            }
+
+            .name,
+            .stats {
+                font-weight: 400;
+                color: gray;
+                margin-bottom: 5px;
+            }
+
+            .name {
+                font-size: 22px;
+            }
+
+            .stats {
+                font-size: 19px;
+            }
+        </style>
+
+    </head>
+    <body>
+        <div class="container">
+            <div class="channal-picture">
+                <img class="profile-picture" src="images/cat.jfif">
+            </div>
+            <div class="profile-info">
+                <p class="title">Mimi</p>
+                <p class="name">the cat</p>
+                <p class="stats">popular</p>
+            </div>
+            <div class="follow-button">
+                <button>Follow</button>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="channal-picture">
+                <img class="profile-picture" src="images/baby-dog.jfif">
+            </div>
+            <div class="profile-info">
+                <p class="title">Baby Dog</p>
+                <p class="name"> sleepy dog </p>
+                <p class="stats">popular</p>
+            </div>
+            <div class="follow-button">
+                <button>Follow</button>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="channal-picture">
+                <img class="profile-picture" src="images/red-fox.jfif">
+            </div>
+            <div class="profile-info">
+                <p class="title">Red Fox</p>
+                <p class="name">happy</p>
+                <p class="stats">popular</p>
+            </div>
+            <div class="follow-button">
+                <button>Follow</button>
+            </div>
+        </div>
+    </body>
+</html>

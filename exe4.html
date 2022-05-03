@@ -1,0 +1,90 @@
+<!-- Nested Layouts technique using display inline-block :  -->
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+        <style>
+            p{
+                font-family: roboto, arial;
+                margin: 0;
+                padding: 0;
+            }
+
+            .container {
+                margin-bottom: 8px;
+            }
+
+            .thumbnail {
+                display: inline-block;
+            }
+            .thumbnail-img {
+                width: 210px;
+                cursor: pointer;
+            }
+
+            .profile-info {
+                display: inline-block;
+                vertical-align: top;
+                width: 240px;
+                margin-left: 7px;
+            }
+
+            .title {
+                font-weight: 500;
+                line-height: 24px;
+                font-size: 18px;
+                margin-bottom: 8px;
+                cursor: pointer;
+            }
+
+            .author,
+            .stats {
+                color: rgb(96, 96, 96);
+                font-size: 15px;
+                cursor: pointer;
+            }
+
+            .author {
+                margin-bottom: 6px;
+            }
+        </style>
+    </head>
+    <body>
+      <div class="container">
+          <div class="thumbnail">
+            <img class="thumbnail-img" src="images/thum-1.webp">
+          </div>
+          <div class="profile-info">
+            <p class="title">How to complete against CS degrees(as a self-taught dev)</p>
+            <p class="author">ANJAN DIYORA</p>
+            <p class="stats">1.5K views &#8226; 4 months ago </p>
+          </div>
+      </div>
+
+      <div class="container">
+          <div class="thumbnail">
+            <img class="thumbnail-img" src="images/thum-2.webp">
+          </div>
+          <div class="profile-info">
+            <p class="title">How to complete against CS degrees(as a self-taught dev)</p>
+            <p class="author">ANJAN DIYORA</p>
+            <p class="stats">1.5K views &#8226; 4 months ago </p>
+          </div>
+      </div>
+
+      <div class="container">
+          <div class="thumbnail">
+            <img class="thumbnail-img" src="images/thum-3.webp">
+          </div>
+          <div class="profile-info">
+            <p class="title">How to complete against CS degrees(as a self-taught dev)</p>
+            <p class="author">ANJAN DIYORA</p>
+            <p class="stats">1.5K views &#8226; 4 months ago </p>
+          </div>
+      </div>
+    </body>
+</html>
